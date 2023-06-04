@@ -1,0 +1,17 @@
+Looking to launch executable "/home/victor/Project/DeepVariant/.snakemake/conda/2e902af2566ab095adfafd0933d00008_/bin/bwa-mem2.avx", simd = .avx
+Launching executable "/home/victor/Project/DeepVariant/.snakemake/conda/2e902af2566ab095adfafd0933d00008_/bin/bwa-mem2.avx"
+[bwa_index] Pack FASTA... 28.88 sec
+* Entering FMI_search
+init ticks = 431725349325
+ref seq len = 6199501436
+binary seq ticks = 198270948771
+build suffix-array ticks = 10660054684401
+ref_seq_len = 6199501436
+count = 0, 1819036419, 3099750718, 4380465017, 6199501436
+BWT[2637166787] = 4
+CP_SHIFT = 6, CP_MASK = 63
+sizeof CP_OCC = 64
+pos: 774937680, ref_seq_len__: 774937679
+max_occ_ind = 96867209
+build fm-index ticks = 1977931475415
+Total time taken: 5571.3892

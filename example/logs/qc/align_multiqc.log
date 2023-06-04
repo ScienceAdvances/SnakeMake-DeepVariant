@@ -1,0 +1,10 @@
+
+  /// MultiQC 🔍 | v1.14
+
+|           multiqc | Search path : /home/victor/Project/DeepVariant/results/aligned
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 8/8  
+|          samtools | Found 2 stats reports
+|           multiqc | Compressing plot data
+|           multiqc | Report      : report/align_multiqc.html
+|           multiqc | Data        : report/align_multiqc_data
+|           multiqc | MultiQC complete

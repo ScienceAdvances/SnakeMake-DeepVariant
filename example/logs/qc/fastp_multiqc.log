@@ -1,0 +1,10 @@
+
+  /// MultiQC 🔍 | v1.14
+
+|           multiqc | Search path : /home/victor/Project/DeepVariant/report
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 3/3  
+|             fastp | Found 3 reports
+|           multiqc | Compressing plot data
+|           multiqc | Report      : report/fastp_multiqc.html
+|           multiqc | Data        : report/fastp_multiqc_data
+|           multiqc | MultiQC complete

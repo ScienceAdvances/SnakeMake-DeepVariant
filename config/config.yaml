@@ -1,0 +1,28 @@
+samples: config/samples.tsv
+
+fastqs:
+    dir: raw # raw fastq files directory
+    platform: ILLUMINA
+    pe: false # pair end
+    omics: WES # Replace this string with exactly one of the following [WGS,WES,PACBIO,ONT_R104,HYBRID_PACBIO_ILLUMINA]
+    duplicates: remove # Can be 'none' (default), 'mark' or 'remove'.
+    restrict_regions: config/captured_regions.bed
+
+genome:
+    dir: /home/victor/DataHub/Homo_sapiens
+    datatype: dna # must be one of dna, cdna, cds, ncrna, pep
+    species: homo_sapiens
+    build: GRCh38
+    release: "109"
+
+warpper_mirror: https://jihulab.com/BioQuest/snakemake-wrappers/raw/v1.31.1/
+
+vep:
+    plugins: [LoFtool]
+    # Add any plugin from https://www.ensembl.org/info/docs/tools/vep/script/vep_plugins.html
+    # Plugin args can be passed as well, e.g. "LoFtool,path/to/custom/scores.txt".
+    # extra command line arguments (e.g. --sift, see docs)
+    extra: "--everything"
+
+use-singularity: True
+singularity-args: "--bind /home/victor/DataHub/Homo_sapiens"

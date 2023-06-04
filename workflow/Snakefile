@@ -1,0 +1,37 @@
+#=====================================================
+# common
+#=====================================================
+
+include: "rules/common.smk"
+
+#=====================================================
+# rule order
+#=====================================================
+
+# ruleorder: get_GATK_bundle > align > baserecalibrator
+
+#=====================================================
+# final outputs
+#=====================================================
+
+rule all:
+    input:
+        "report/vep_report.html",
+        "report/align_multiqc.html",
+        "report/fastp_multiqc.html",
+        genome_prefix+"genome.fa",
+        genome_prefix+"genome.fa.fai",
+        genome_prefix+"genome.dict",
+        genome_prefix+"genome.fa.0123",
+        genome_prefix+"vep_plugins",
+        genome_prefix+"vep_cache",
+#=====================================================
+# Modules
+#=====================================================
+
+include: "rules/ref.smk"
+include: "rules/trim.smk"
+include: "rules/qc.smk"
+include: "rules/align.smk"
+include: "rules/call.smk"
+include: "rules/annotate.smk"

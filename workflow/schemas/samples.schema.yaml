@@ -1,0 +1,9 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+description: row of the samples.tsv, representing a sequencing unit, i.e. single-end or paired-end data
+type: object
+properties:
+  Sample:
+    type: string
+    description: sample name/id the unit has been sequenced from
+required:
+  - Sample

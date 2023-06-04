@@ -1,0 +1,9 @@
+channels:
+  - conda-forge
+  - anaconda
+  - bioconda
+  - nodefaults
+dependencies:
+  - tensorflow-estimator
+  - deepvariant
+  - numpy

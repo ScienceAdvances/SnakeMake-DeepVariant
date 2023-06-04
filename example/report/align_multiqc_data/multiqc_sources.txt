@@ -1,0 +1,3 @@
+Module	Section	Sample Name	Source
+Samtools	stats	SRR24443168	/home/victor/Project/DeepVariant/results/aligned/SRR24443168.txt
+Samtools	stats	SRR24443166	/home/victor/Project/DeepVariant/results/aligned/SRR24443166.txt
