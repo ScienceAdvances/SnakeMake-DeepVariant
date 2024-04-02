@@ -25,7 +25,7 @@ rule GLnexus:
     output:
         "results/called/all.vcf.gz"
     params:
-        omics=config["fastqs"]["omics"],
+        config="DeepVariant{}".format(config["fastqs"]["omics"]) # WES, WGS, ""
     threads: 32
     log:
         "logs/GLnexus.log",

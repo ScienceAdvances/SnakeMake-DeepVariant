@@ -63,7 +63,7 @@ def get_dedup_extra(config=config):
 def get_fastq(wildcards):
     """Get fastq files of given sample and unit."""
     fastqs = samples.loc[(wildcards.s, wildcards.u), ]
-    if config["fastqs"].get("pe"):
+    if config["fastqs"].get("pair_end"):
         return [fastqs.fq1, fastqs.fq2]
     return [fastqs.fq1]
 
